@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-md p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="https://Rode.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="img/logo_Rode.jpg" class="h-8" alt="Rode Logo" />
+      </a>
+
+      <!-- Search Icon and Mobile Menu Button -->
+      <div class="flex items-center space-x-3 md:order-2">
+        <button type="button"
+          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button data-collapse-toggle="navbar-menu" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navbar Links -->
+      <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-menu">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white font-bold text-xl"
+              aria-current="page">Product</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:text-blue-500 font-bold text-xl">Solution</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:text-blue-500 font-bold text-xl">Users
+              Guide</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:text-blue-500 font-bold text-xl">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- First Section -->
+  <section class="relative min-h-screen flex items-center justify-start">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      
+      <img src="img/home.jpg" alt="Background 2"
+        class="w-full h-full object-cover " />
+    </div>
+  
+    <div class="relative z-10 px-6 flex flex-col md:flex-row md:justify-start md:items-center h-full w-full">
+      <div class="w-full md:w-1/2 text-center flex flex-col items-center text-white space-y-6">
+  
+        <!-- Logo Image -->
+        <img src="https://edge.rode.com/images/page/1/modules/10903/R%C3%98DE%20Banner%20Bundles_Header.svg" class="w-full  mb-4" alt="WIGO Logo">
+  
+        <!-- Heading -->
+        <h3 class="text-3xl sm:text-4xl text-black md:text-5xl lg:text-4xl font-bold  leading-snug">
+          Gear Up and Start Creating
+        </h3>
+  
+        <!-- Paragraph -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl max-w-md text-gray-600">
+          Ranging from compact street interview kits to complete studio setups, there's a RØDE kit for every stage of
+          your creative journey.
+        </p>
+  
+        <!-- Button -->
+        <a href="#"
+          class="inline-block mt-4 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Second Section -->
+  <section class="relative min-h-screen flex items-center justify-end">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="img/rode-hdmi-rcv-front-hero-Banner.jpg" alt="Background 2"
+        class="w-full h-full object-cover brightness-40" />
+    </div>
+  
+    <div class="relative z-10 px-6 flex flex-col md:flex-row md:justify-end md:items-center h-full w-full">
+      <div class="w-full md:w-1/2 text-center flex flex-col items-center text-white space-y-6">
+  
+        <!-- Logo Image -->
+        <img src="https://edge.rode.com/images/page/1/modules/10563/RCVideo_PL_PI_01.svg" class="w-[100%] mb-4" alt="WIGO Logo">
+  
+        <!-- Heading -->
+        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-gray-300 leading-snug">
+          Gear Up and Start Creating
+        </h3>
+  
+        <!-- Paragraph -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl max-w-md text-gray-300">
+          Ranging from compact street interview kits to complete studio setups, there's a RØDE kit for every stage of
+          your creative journey.
+        </p>
+  
+        <!-- Button -->
+        <a href="#"
+          class="inline-block mt-4 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+  </section>
+   
+
+
+
+  <!-- Thrid Section -->
+  <section class="relative min-h-screen flex items-center justify-center">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="img/rode-wireless2.jpg" alt="Background 3" class="w-full h-full object-cover " />
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto relative z-10 px-6 flex flex-col md:flex-row md:justify-end md:items-center h-full">
+      <div
+        class="w-full md:w-1/2 text-center md:text-center flex flex-col items-center md:items-center text-white space-y-6">
+
+        <!-- Logo Image -->
+        <img src="https://edge.rode.com/images/page/1/modules/11000/WIGOIII_PL_PI_02.svg" class="w-full  mb-4" alt="WIGO Logo">
+
+        <!-- Heading -->
+        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-gray-300 leading-snug">
+          Your Sound, Your Style, Your Story
+        </h3>
+
+        <!-- Paragraph -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl max-w-md text-gray-300 ">
+          The third generation of the world’s most popular wireless microphone has arrived.
+        </p>
+
+        <!-- Button -->
+        <a href="#"
+          class="inline-block mt-4 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+          SHOP NOW
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Fourth Section -->
+  <section class="relative min-h-screen flex items-center justify-start">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="img/rode-podcast-bundle-banner.jpg" alt="Background 4"
+        class="w-full h-full object-cover brightness-40" />
+    </div>
+  
+    <div class="relative z-10 px-6 flex flex-col md:flex-row md:justify-start md:items-center h-full w-full">
+      <div class="w-full md:w-1/2 text-center flex flex-col items-center text-white space-y-6">
+  
+        <!-- Logo Image -->
+        <img src="https://edge.rode.com/images/page/1/modules/10903/R%C3%98DE%20Banner%20Bundles_Header.svg" class="w-[100%]  mb-4" alt="WIGO Logo">
+  
+        <!-- Heading -->
+        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-gray-300 leading-snug">
+          Gear Up and Start Creating
+        </h3>
+  
+        <!-- Paragraph -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl max-w-md text-gray-300">
+          Ranging from compact street interview kits to complete studio setups, there's a RØDE kit for every stage of
+          your creative journey.
+        </p>
+  
+        <!-- Button -->
+        <a href="#"
+          class="inline-block mt-4 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+  </section>
+  
+   
+
+  <!-- Fifth Section -->
+  <section class="relative min-h-screen flex items-center justify-center">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="img/singer2.jpg" alt="">
+        class="w-full h-full object-cover brightness-80" />
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto relative z-10 px-6 flex flex-col md:flex-row md:justify-end md:items-center h-full">
+      <div
+        class="w-full md:w-1/2 text-center md:text-center flex flex-col items-center md:items-center text-white space-y-6">
+
+        <!-- Logo Image -->
+        <img src="https://edge.rode.com/images/page/1/modules/11210/PODMIC%20USB_PL_P_02.svg" class="w-full  mb-4" alt="WIGO Logo">
+
+        <!-- Heading -->
+        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-black leading-snug">
+          Introducing the PodMic USB in White
+        </h3>
+
+        <!-- Paragraph -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl max-w-md text-black">
+          The PodMic USB is an ultra-versatile dynamic microphone with both an XLR and USB output, ideal for podcasting,
+          streaming, gaming, and other speech applications for content creation. Now available in white.
+        </p>
+
+        <!-- Button -->
+        <a href="#"
+          class="inline-block mt-4 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+
+  </section>
+  <!-- Sixth Section -->
+  <section class="relative min-h-screen flex items-center justify-start">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="img/singer.jpg" alt="Background 6"
+        class="w-full h-full object-cover" />
+    </div>
+  
+    <div class="relative z-10 px-6 flex flex-col md:flex-row md:justify-start md:items-center h-full w-full">
+      <div class="w-full md:w-1/2 text-center flex flex-col items-center text-white space-y-6">
+  
+        <!-- Logo Image -->
+        <img src="https://edge.rode.com/images/page/1/modules/10926/NT1SS_PL_PMI_01.svg" class="w-[100%]  mb-4" alt="WIGO Logo">
+  
+        <!-- Heading -->
+        <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-gray-300 leading-snug">
+          Gear Up and Start Creating
+        </h3>
+  
+        <!-- Paragraph -->
+        <p class="mt-4 text-base sm:text-lg md:text-xl max-w-md text-gray-300">
+          Ranging from compact street interview kits to complete studio setups, there's a RØDE kit for every stage of
+          your creative journey.
+        </p>
+  
+        <!-- Button -->
+        <a href="#"
+          class="inline-block mt-4 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+          SHOP NOW
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Cards -->
+
+  <section class="bg-gray-100">
+    <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+
+      <h2 class="text-4xl font-bold underline uppercase text-center text-black mb-8">Latest From The RØDE Blog</h2>
+
+      <div class="w-full grid grid-cols-1  sm:grid-cols-2 gap-x-6 gap-y-10">
+
+        <!--  Card 1 -->
+        <div class="group relative  bg-white py-4 flex flex-col items-center text-center">
+          <h3 class="mt-4 text-3xl font-semibold text-gray-900">Introducing the Wireless GO (Gen 3) – the Next
+            Generation of the World’s Most Popular Wireless Mic</h3>
+          <img src="img/rode-rodecaster.jpg" alt=""
+            class="aspect-square bg-gray-200 object-cover mb-4 group-hover:opacity-75 w-full ">
+          <p class=" text-2xl text-gray-500 ">
+            The Wireless GO (Gen 3) is a powerful compact microphone system that features 32-bit float recording,
+            intelligent GainAssist and a wide range of professional features.
+          </p>
+          <a href="#"
+            class="inline-block mt-8 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300">
+            Learn More
+          </a>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="group relative bg-white py-4 flex flex-col items-center text-center">
+          <h3 class="mt-4 text-3xl font-semibold text-gray-900">Introducing the Wireless GO (Gen 3) – the Next
+            Generation of the World’s Most Popular Wireless Mic</h3>
+          <img src="img/Photo-Girl.jpg" alt=""
+            class=" mb-4 aspect-square bg-gray-200 object-cover group-hover:opacity-75 w-full ">
+          <p class=" text-2xl text-gray-500 ">
+            The Wireless GO (Gen 3) is a powerful compact microphone system that features 32-bit float recording,
+            intelligent GainAssist and a wide range of professional features.
+          </p>
+          <a href="#"
+            class="inline-block mt-8 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group relative bg-white py-4 flex flex-col items-center text-center">
+          <h3 class="mt-4 text-3xl font-semibold text-gray-900">Introducing the Wireless Micro: Our Smallest, Simplest
+            and Sleekest Wireless Mic Yet</h3>
+          <img src="img/Earphone wireless.jpg" alt=""
+            class=" mb-4 aspect-square bg-gray-200 object-cover group-hover:opacity-75 w-full ">
+          <p class=" text-2xl text-gray-500 ">
+            The Wireless Micro is a pocket-sized wireless microphone system tailor-made for smartphone creators,
+            available in version for either USB-C or Lightning phones.
+          </p>
+          <a href="#"
+            class="inline-block mt-8 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group relative bg-white py-4 flex flex-col items-center text-center">
+          <h3 class="mt-4 text-3xl font-semibold text-gray-900">Introducing the RØDECaster Video All-in-One Production
+            Console</h3>
+          <img src="img/Robe 4.jpg" alt=""
+            class=" mb-4 aspect-square bg-gray-200 object-cover group-hover:opacity-75 w-full ">
+          <p class=" text-2xl text-gray-500 ">
+            The RØDECaster Video is a revolutionary all-in-one video and audio production console that provides
+            intuitive control over every element of your content.
+          </p>
+          <a href="#"
+            class="inline-block mt-8 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300">
+            Learn More
+          </a>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+
+  <footer class="bg-black dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl">
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Products</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="#" class=" hover:underline">Microphones</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Headphones</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Interfaces and Mixers</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Apps</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Apparel</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Service</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Support Center</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Warranty Login</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Where to Buy</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Authorised Dealers</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Company</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="#" class="hover:underline">About RODE</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">News and info</a>
+            </li>
+            <li class="mb-4">
+              <a href="#" class="hover:underline">Career Opportunties</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-2xl font-bold text-white uppercase dark:text-white">Subscribe to our latest news and offers</h2>
+          <a href="#"
+            class="inline-block  px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white transition-all duration-300">
+            SUBSCRIBE
+          </a>
+        </div>
+      </div>
+       
+      <div class="px-4 py-6  bg-black md:flex md:items-center md:justify-between">
+        <span class="text-sm space-x-3 sm:text-center">
+          <a href="#" class="text-gray-300 font-bold">Privacy Policy</a>
+          <a href="#" class="text-gray-300 font-bold">Term & Condtions</a>
+          <a href="#" class="text-gray-300 font-bold">Cookie Policy</a>
+        </span>
+        <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+         
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-square-youtube"></i>
+            <span class="sr-only">Youtube</span>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-discord"></i>
+            <span class="sr-only">Discord community</span>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-tiktok"></i>
+            <span class="sr-only">Tiktok</span>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-square-twitter"></i>
+            <span class="sr-only">Twitter page</span>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-github"></i>
+            <span class="sr-only">GitHub account</span>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-900 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="sr-only">Linkedin account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.querySelector('[data-collapse-toggle="navbar-menu"]');
+    const mobileMenu = document.getElementById('navbar-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
